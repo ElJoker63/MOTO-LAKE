@@ -1,4 +1,4 @@
-import wget, time, humanize, adb, sys, requests, json, os, platform
+import requests, json, os
 from api import *
 
 def check_releases(url):
