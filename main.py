@@ -39,8 +39,10 @@ def main():
         download_magisk()
     if not os.path.exists(TWRP):
         download_twrp()
-    ver = versiones()    
-    files = search_release('lineage-21.0-20241019-UNOFFICIAL-lake')#input(">>> "))
+    ver = versiones()
+    for version in ver:
+        print(f"  [-]{version}")
+    files = search_release(input(">>> "))
     data = json.loads(files)
     install_rom(data['boot'], data['rom'], GAPPS, data['vendor'], MAGISK)
     
