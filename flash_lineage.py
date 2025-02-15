@@ -1,6 +1,5 @@
 import subprocess
-import time
-import os, config
+import os
 from api import *
 
 positive = ['yes', 'YES', 'Yes', 'SI', 'si', 'y', 'Y', 's', 'S']
