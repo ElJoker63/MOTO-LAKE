@@ -14,15 +14,19 @@ def download_twrp():
     return twrp
 
 def download_magisk():
-    print(f'[+] Descargando MAGISK')
-    resp = requests.get(REPO_MAGISK).text
-    data = json.loads(resp)
-    last = data['assets'][0]
-    url = last['browser_download_url']
-    file = last['label']
-    magisk = download(url, file)
-    os.system(cmd)
-    return magisk
+    if os.path.exists(MAGISK):
+        print(f'[+] MAGISK ya esta descargado')
+        return MAGISK
+    else:
+        print(f'[+] Descargando MAGISK')
+        resp = requests.get(REPO_MAGISK).text
+        data = json.loads(resp)
+        last = data['assets'][0]
+        url = last['browser_download_url']
+        file = last['label']
+        magisk = download(url, file)
+        os.system(cmd)
+        return magisk
 
 def versiones():
     print(f'[+] VERSIONES:')
