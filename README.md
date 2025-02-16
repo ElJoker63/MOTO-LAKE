@@ -21,15 +21,14 @@ Este proyecto es una herramienta para facilitar la instalación de ROMs personal
 1.  Clonar el repositorio:
 
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    cd <NOMBRE_DEL_REPOSITORIO>
+    git clone https://github.com/ElJoker63/MOTO-LAKE.git
+    cd MOTO-LAKE
     ```
 
 2.  Crear un entorno virtual (opcional pero recomendado):
 
     ```bash
     python3 -m venv venv
-    source venv/bin/activate   # En Linux/macOS
     venv\Scripts\activate.bat  # En Windows
     ```
 
