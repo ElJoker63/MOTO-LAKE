@@ -50,25 +50,9 @@ El proyecto se puede ejecutar de dos maneras:
 
 1. Ejecutar el script principal:
     ```bash
-    python inter.py
+    python main.py
     ```
 2.  La herramienta te guiará a través de los pasos necesarios.
-
-### Interfaz gráfica (Flet)
-
-1. Ejecutar el script Flet:
-
-    ```bash
-    python test.py
-    ```
-
-2.  La interfaz gráfica te guiará a través de los pasos.
-
-### Pasos generales
-
-1.  **Verificar dependencias**: La herramienta descargará automáticamente ADB, Fastboot, TWRP, Magisk y el script para particionar.
-2.  **Seleccionar la versión de LineageOS**: La herramienta listará las versiones disponibles para descargar.
-3.  **Iniciar la instalación**: La herramienta reiniciará el dispositivo en modo bootloader, flasheará el archivo boot.img, reiniciará en modo recovery, instalará el script para particionar, reiniciará nuevamente en modo recovery e instalará la ROM y las GApps.
 
 ## Estructura del proyecto
 
