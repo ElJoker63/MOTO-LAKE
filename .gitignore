@@ -1,10 +1,6 @@
 /adb-fastboot
-twrp-3.7.0_9-0-lake.img
-twrp-installer-3.7.0_9-0-lake.zip
 /apps
 /partition
-NikGapps-stock-arm64-14-20241104-signed.zip
-NikGapps-stock-arm64-15-20241104-signed.zip
 /__pycache__
 Magisk-v28.0.apk
 /releases
